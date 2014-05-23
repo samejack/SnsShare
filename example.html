@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>SNS Share jQuery Plugin</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>SNS Share jQuery Plugin (Example)</h2>
+    <button class="share-to btn" data-sns="facebook">Facebook</button>
+    <button class="share-to btn" data-sns="twitter">Twitter</button>
+    <button class="share-to btn" data-sns="google+">Google+</button>
+    <button class="share-to btn" data-sns="plurk">Plurk</button>
+    <button class="share-to btn" data-sns="line">Line (Mobile only)</button>
+</div>
+
+<!-- Include JavaScript -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./jquery.snsShare.js"></script>
+<script type="text/javascript">
+    $(document).ready( function () {
+        $('.share-to').snsShare('Hello World!', 'http://www.kimo.com.tw');
+    });
+</script>
+</body>
+</html>
