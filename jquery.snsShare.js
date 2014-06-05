@@ -2,10 +2,10 @@
  * jQuery SNS Share Plugin
  *
  * @author sj
- * @link https://github.com/smajeack/SmartyGrid
+ * @link https://github.com/samejack/SnsShare
  * @copyright Copyright 2014 SJ
  * @version 1.0.0
- * @license Apache License Version 2.0 (https://github.com/samejack/SmartyGrid/blob/master/LICENSE)
+ * @license Apache License Version 2.0 (https://github.com/samejack/SnsShare/blob/master/LICENSE)
  */
 jQuery.fn.snsShare = function(message, url) {
 
