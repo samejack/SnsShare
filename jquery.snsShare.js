@@ -16,11 +16,11 @@ jQuery.fn.snsShare = function(message, url) {
      * @returns {HTMLElement}
      */
     getAtagElement = function () {
-        var element = document.getElementById('hg-share-a-tag');
+        var element = document.getElementById('share-a-tag');
         if (element === null) {
             element = document.createElement('a');
             element.style = "display: none;";
-            element.id = 'hg-share-a-tag';
+            element.id = 'share-a-tag';
             element.target = "_blank";
             document.getElementsByTagName('body')[0].appendChild(element);
         }
