@@ -50,35 +50,36 @@ jQuery.fn.snsShare = function(message, url) {
 
     return this.each(function () {
         jQuery(this).click(function () {
-            var element, snsType = jQuery(this).attr('data-sns');;
+            var element, snsType = jQuery(this).attr('data-sns'), protocol;
             if (typeof(snsType) === 'string' && jQuery.inArray(snsType, types) !== -1) {
                 if (typeof(message) === 'undefined') {
                     message = window.location;
                 }
+                protocol = location.protocol;
                 switch (snsType) {
                     case 'facebook':
                         element = getAtagElement();
-                        element.href = 'http://www.facebook.com/sharer.php?u=' + url + '&t=' + encodeURIComponent(message);
+                        element.href = protocol + '//www.facebook.com/sharer.php?u=' + url + '&t=' + encodeURIComponent(message);
                         element.dispatchEvent(makeMouseClickEvent());
                         break;
                     case 'google+':
                         element = getAtagElement();
-                        element.href = 'https://plus.google.com/share?url=' + encodeURIComponent(message + ' ' + url);
+                        element.href = protocol + '//plus.google.com/share?url=' + encodeURIComponent(message + ' ' + url);
                         element.dispatchEvent(makeMouseClickEvent());
                         break;
                     case 'line':
                         element = getAtagElement();
-                        element.href = 'http://line.naver.jp/R/msg/text/?' + encodeURIComponent(message + ' ' + url);
+                        element.href = protocol + '//line.naver.jp/R/msg/text/?' + encodeURIComponent(message + ' ' + url);
                         element.dispatchEvent(makeMouseClickEvent());
                         break;
                     case 'twitter':
                         element = getAtagElement();
-                        element.href = 'http://twitter.com/home/?status=' + encodeURIComponent(message + ' ' + url);
+                        element.href = protocol + '//twitter.com/home/?status=' + encodeURIComponent(message + ' ' + url);
                         element.dispatchEvent(makeMouseClickEvent());
                         break;
                     case 'plurk':
                         element = getAtagElement();
-                        element.href = 'http://www.plurk.com/m?qualifier=shares&content=' + encodeURIComponent(message + ' ' + url);
+                        element.href = protocol + '//www.plurk.com/m?qualifier=shares&content=' + encodeURIComponent(message + ' ' + url);
                         element.dispatchEvent(makeMouseClickEvent());
                         break;
                     default:
