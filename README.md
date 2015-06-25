@@ -1,7 +1,7 @@
 SnsShare
 ========
 
-Social Networking Services Shere jQuery Plugin. ([WebSite](http://samejack.github.io/SnsShare/))
+Social Networking Services Shere jQuery Plugin. ([WebSite](http://samejack.github.io/SnsShare/), [Demo](http://samejack.github.io/SnsShare/demo/))
 
 ## Sample Code
 
