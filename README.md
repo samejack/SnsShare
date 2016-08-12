@@ -20,3 +20,7 @@ Social Networking Services Shere jQuery Plugin. ([WebSite](http://samejack.githu
             $('.share-to').snsShare('Hello World!', 'http://samejack.github.io/SnsShare/');
         });
     </script>
+
+### License
+
+Apache License Version 2.0
