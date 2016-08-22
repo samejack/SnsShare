@@ -1,6 +1,6 @@
 {
   "name": "SnsShare",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Social Networking Services Shere jQuery Plugin.",
   "main": "jquery.snsShare.js",
   "scripts": {
@@ -12,6 +12,7 @@
   },
   "keywords": [
     "jquery",
+    "jquery-plugin",
     "faceboo",
     "google+",
     "twitter"
