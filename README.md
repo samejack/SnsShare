@@ -11,14 +11,14 @@ Social Networking Services Shere jQuery Plugin. ([WebSite](http://samejack.githu
     <button class="share-to btn" data-sns="twitter">Twitter</button>
     <button class="share-to btn" data-sns="google+">Google+</button>
     <button class="share-to btn" data-sns="plurk">Plurk</button>
-    <button class="share-to btn" data-sns="line">Line (Mobile only)</button>
+    <button class="share-to btn" data-sns="line">Line</button>
 </div>
 
 <!-- JavaScript -->
 <script type="text/javascript" src="jquery.snsShare.js"></script>
 <script type="text/javascript">
     $(document).ready( function () {
-        $('.share-to').snsShare('Hello World!', 'http://samejack.github.io/SnsShare/');
+        $('.share-to').snsShare('Hello World!', 'https://samejack.github.io/SnsShare/');
     });
 </script>
 ```
